@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import "@/pages/components/nabvar"
 import Nabvar from "@/pages/components/nabvar";
-import { AuthProvider } from "./context/authcontext";
+import { AuthProvider } from "../context/authcontext";
 import { useState } from "react";
 
 export default function App({ Component, pageProps }) {

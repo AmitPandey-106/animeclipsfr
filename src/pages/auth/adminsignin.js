@@ -2,7 +2,7 @@
 import { useContext, useState } from 'react';
 import { useRouter } from 'next/router';
 import styles from '@/styles/auth.module.css';
-import { AuthContext } from '../context/authcontext';
+import { AuthContext } from '../../context/authcontext';
 import { jwtDecode } from 'jwt-decode';
 
 export default function SignIn({ initialError }) { // initialError is passed as a prop here

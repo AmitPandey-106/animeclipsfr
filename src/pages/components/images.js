@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Fullscreen from './fullscreen';
 import { useContext } from 'react';
-import { AuthContext } from '../context/authcontext';
+import { AuthContext } from '../../context/authcontext';
 import styles from '@/styles/images.module.css'
 import Image from 'next/image';
 

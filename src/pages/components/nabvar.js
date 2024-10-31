@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { AuthContext } from '../context/authcontext';
+import { AuthContext } from '../../context/authcontext';
 
 export default function Navbar() {
   const { isAuthenticated, signOut, authuser, isAuthAdmin } = useContext(AuthContext);

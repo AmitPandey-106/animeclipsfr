@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { AuthContext } from '../context/authcontext';
+import { AuthContext } from '../../context/authcontext';
 import Fullscreen from './fullscreen';
 import styles from '@/styles/profile.module.css'
 import Image from 'next/image';
