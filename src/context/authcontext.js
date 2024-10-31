@@ -47,7 +47,6 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  console.log(authadmin?.Full_name,"data2")
 
   const signOut = () => {
     localStorage.removeItem('token');
