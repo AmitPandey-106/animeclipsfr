@@ -1,0 +1,200 @@
+/* Container Styles */
+.all_images_container {
+  padding: 20px;
+}
+
+.title {
+  margin: 0 30px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.divider {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Grid Layout */
+.image_grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 5px; /* Reduce gap between images */
+  justify-content: center;
+}
+
+/* Image Wrapper */
+.image_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px; /* Slightly larger image size */
+  padding: 15px;
+  background-color: rgba(173, 216, 230, 0.485);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image Styles */
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 320px; /* Slightly larger image height */
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/* Download Button */
+.download_button {
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download_button:hover {
+  background-color: #004d00;
+}
+
+/* No Posts Message */
+.no_posts {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 480px) and (max-width: 767px) {
+  .image_grid {
+      grid-template-columns: 1fr 1fr; /* Two columns for small tablets */
+      gap: 5px; /* Smaller gap */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .image_grid {
+      grid-template-columns: 1fr 1fr 1fr; /* Three columns for tablets */
+      gap: 5px; /* Smaller gap */
+  }
+
+  .image_wrapper {
+      max-width: 280px; /* Slightly larger size for medium screens */
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .image_grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns for larger tablets/small desktops */
+      gap: 5px; /* Smaller gap */
+  }
+}
+
+@media (min-width: 1441px) {
+  .image_grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Five columns for larger laptops and desktops */
+      gap: 5px; /* Smaller gap */
+  }
+
+  .image_wrapper {
+      max-width: 300px; /* Slightly larger size for large screens */
+  }
+}
+
+/* Container Styles */
+.videos_container {
+  padding: 20px;
+}
+
+.videos_container h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Grid Layout */
+.container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 15px; /* Gap between video items */
+}
+
+/* Video Item */
+.video_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Video Wrapper */
+.video_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(173, 216, 230, 0.485);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Styles */
+.post_video {
+  width: 100%;
+  height: auto;
+  max-height: 320px; /* Adjust height as needed */
+  border-radius: 5px;
+}
+
+/* Download Button */
+.download_button {
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download_button:hover {
+  background-color: #004d00;
+}
+
+/* No Posts Message */
+.no_posts {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+      grid-template-columns: 1fr 1fr; /* Two columns for small tablets */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+      grid-template-columns: 1fr 1fr 1fr; /* Three columns for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns for larger screens */
+  }
+}
+
+

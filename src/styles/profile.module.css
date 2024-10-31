@@ -1,0 +1,188 @@
+.all_images_container {
+    padding: 20px;
+}
+.image_grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 5px; /* Reduce gap between images */
+    justify-content: center;
+    margin: auto 50px;
+  }
+  
+  /* Image Wrapper */
+  .image_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px; /* Slightly larger image size */
+    padding: 15px;
+    background-color: rgba(173, 216, 230, 0.485);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Image Styles */
+  .image {
+    width: 100%;
+    height: auto;
+    max-height: 320px; /* Slightly larger image height */
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
+  /* Download Button */
+  .download_button {
+    background-color: green;
+    color: white;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download_button:hover {
+    background-color: #004d00;
+  }
+  
+  /* No Posts Message */
+  .no_posts {
+    font-size: 1.2rem;
+    color: #161414;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 480px) and (max-width: 767px) {
+    .image_grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for small tablets */
+        gap: 5px; /* Smaller gap */
+        margin: 0 10px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .image_grid {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for tablets */
+        gap: 5px; /* Smaller gap */
+    }
+  
+    .image_wrapper {
+        max-width: 280px; /* Slightly larger size for medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .image_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns for larger tablets/small desktops */
+        gap: 5px; /* Smaller gap */
+    }
+  }
+  
+  @media (min-width: 1441px) {
+    .image_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Five columns for larger laptops and desktops */
+        gap: 5px; /* Smaller gap */
+    }
+  
+    .image_wrapper {
+        max-width: 300px; /* Slightly larger size for large screens */
+    }
+  }
+/* YourStyles.module.css */
+
+/* Videos Container */
+.videos_container {
+  padding: 20px; /* Padding for the main container */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the container */
+  display: flex; /* Use flexbox to manage layout */
+  flex-wrap: wrap; /* Allow items to wrap into rows */
+}
+
+/* Video Item */
+.video_item {
+  position: relative; /* For delete button positioning */
+  width: calc(50% - 10px); /* Make each item 50% width minus margin */
+  margin-bottom: 20px; /* Space between rows */
+  margin-right: 10px
+}
+
+/* Delete Button */
+.delete_div {
+  position: absolute; /* Position the delete button */
+  top: 10px; /* Position from the top */
+  right: 10px; /* Position from the right */
+}
+
+.delete {
+  cursor: pointer; /* Cursor pointer for delete button */
+  color: red; /* Color for delete button */
+  font-size: 16px; /* Font size for delete button */
+}
+
+/* Video Wrapper */
+.video_wrapper {
+  display: flex; /* Use flex for alignment */
+  flex-direction: column; /* Column layout for wrapper */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  background-color: rgba(173, 216, 230, 0.485); /* Similar background to image wrapper */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  padding: 15px; /* Padding inside each video wrapper */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Similar shadow to image wrapper */
+  transition: transform 0.3s ease-in-out; /* Transition for hover effects */
+}
+
+/* Video Styles */
+.post_video {
+  width: 100%; /* Full width for video */
+  max-height: 300px; /* Limit max height */
+  object-fit: contain; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* No Posts Message */
+.no_posts {
+  font-size: 1.2rem; /* Font size for no posts message */
+  color: black; /* Color for no posts message */
+  text-align: center; /* Center the text */
+  width: 100%; /* Full width */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .videos_container {
+      padding: 10px; /* Adjust padding for mobile */
+  }
+
+  .video_item {
+      width: calc(50% - 10px); /* Two videos per row on small screens */
+  }
+
+  .post_video {
+      max-height: 200px; /* Limit video height on small screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .video_item {
+      width: calc(33.33% - 10px); /* Three videos per row on medium screens */
+  }
+
+  .post_video {
+      max-height: 250px; /* Limit video height on medium screens */
+  }
+}
+
+@media (min-width: 1025px) {
+  .video_item {
+      width: calc(25% - 10px); /* Four videos per row on larger screens */
+  }
+}

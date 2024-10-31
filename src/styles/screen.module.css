@@ -1,0 +1,129 @@
+/* Fullscreen.css */
+.post_overlay {
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px; /* Added padding for smaller devices */
+    overflow: auto; /* Allow scrolling if content is larger than the viewport */
+}
+
+.close_btn {
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.image_detail {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image_div {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.responsive_image {
+    width: 100%; /* Default width for all screens */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Max height for responsiveness */
+    border-radius: 5px; /* Rounded corners */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+}
+
+.details {
+    text-align: center;
+}
+
+.details h2 {
+    margin: 10px 0;
+    font-size: 24px; /* Larger font for titles */
+}
+
+.details p {
+    font-size: 16px; /* Adjusted font size for readability */
+    color: #555; /* Subtle color for description */
+}
+
+.download_button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.download_button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.delete_icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: red; /* Red color for delete icon */
+    margin-bottom: 10px; /* Spacing from the image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .responsive_image {
+        max-height: 300px; /* Smaller max height for mobile */
+    }
+
+    .close_btn {
+        font-size: 30px; /* Smaller close button */
+    }
+
+    .details h2 {
+        font-size: 20px; /* Smaller title for mobile */
+    }
+
+    .details p {
+        font-size: 14px; /* Smaller description text */
+    }
+
+    .download_button {
+        width: 100%; /* Full width button on mobile */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .responsive_image {
+        max-height: 400px; /* Adjust max height for tablets */
+    }
+
+    .details h2 {
+        font-size: 22px; /* Medium title size */
+    }
+}
+
+@media (min-width: 1025px) {
+    .responsive_image {
+        max-height: 500px; /* Larger max height for laptops */
+    }
+
+    .details h2 {
+        font-size: 26px; /* Larger title size for larger screens */
+    }
+}

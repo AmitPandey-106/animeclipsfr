@@ -1,0 +1,62 @@
+/* AnimeVideos.module.css */
+
+.container {
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.title {
+    text-align: center; /* Center the title */
+    font-size: 2rem; /* Large font size */
+    margin-bottom: 1.5rem; /* Space below the title */
+}
+
+.videoContainer {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+.videoItem {
+    background-color: rgba(173, 216, 230, 0.452); /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside each video item */
+    text-align: center; /* Center text */
+}
+
+.videoPlayer {
+    width: 100%; /* Make the video player take up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit max height */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+
+    .videoContainer {
+        grid-template-columns: repeat(2, 1fr); /* 2 videos per row on mobile */
+    }
+
+    .videoPlayer {
+        max-height: 200px; /* Consistent height for videos on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem; /* Smaller title on very small screens */
+    }
+
+    .videoContainer {
+        grid-template-columns: repeat(2, 1fr); /* Ensure 2 videos per row on very small screens */
+    }
+
+    .videoPlayer {
+        max-height: 150px; /* Adjust height for very small screens */
+    }
+}
