@@ -37,7 +37,7 @@ const AnimeVideos = () => {
             const fetchVideos = async () => {
                 try {
                     // Include the anime_type in the fetch request
-                    const response = await fetch(`http://localhost:8000/all-posts/videos?anime_type=${anime_type}`);
+                    const response = await fetch(`https://animeclipsbr.onrender.com/all-posts/videos?anime_type=${anime_type}`);
                     const data = await response.json();
 
                     // Check the structure of the returned data

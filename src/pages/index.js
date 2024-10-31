@@ -13,7 +13,7 @@ export default function Home() {
     useEffect(() => {
         const fetchallanime = async () => {
             try {
-                const res = await fetch('http://localhost:8000/all-post/image', {
+                const res = await fetch('https://animeclipsbr.onrender.com/all-post/image', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'
@@ -39,7 +39,7 @@ export default function Home() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const res = await fetch('http://localhost:8000/all-post/image', {
+                const res = await fetch('https://animeclipsbr.onrender.com/all-post/image', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'
@@ -66,7 +66,7 @@ export default function Home() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const res = await fetch('http://localhost:8000/all-posts/videos', {
+                const res = await fetch('https://animeclipsbr.onrender.com/all-posts/videos', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'

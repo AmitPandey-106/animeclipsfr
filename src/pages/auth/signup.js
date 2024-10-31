@@ -19,7 +19,7 @@ export default function Signup() {
     setError('');
     setSuccess('');
     try{
-      const res = await fetch('http://localhost:8000/auth/signup', {
+      const res = await fetch('https://animeclipsbr.onrender.com/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

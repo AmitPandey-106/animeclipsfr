@@ -33,8 +33,8 @@ export default function Navbar() {
 
     try {
       const [resVideo, resImage] = await Promise.all([
-        fetch(`http://localhost:8000/api/searchmedia?anime_type=${searchTerm}&type=video`),
-        fetch(`http://localhost:8000/api/searchmedia?anime_type=${searchTerm}&type=image`)
+        fetch(`https://animeclipsbr.onrender.com/api/searchmedia?anime_type=${searchTerm}&type=video`),
+        fetch(`https://animeclipsbr.onrender.com/api/searchmedia?anime_type=${searchTerm}&type=image`)
       ]);
 
       if (!resVideo.ok) {

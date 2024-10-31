@@ -20,7 +20,7 @@ export default function ProfilePost() {
     
             if (token) {
                 try {
-                    const res = await fetch(`http://localhost:8000/api/user-post/${authadmin.id}`, {
+                    const res = await fetch(`https://animeclipsbr.onrender.com/api/user-post/${authadmin.id}`, {
                         method: 'GET',
                         headers: {
                             'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ export default function ProfilePost() {
         const token = localStorage.getItem('token');
         if (token) {
             try {
-                const res = await fetch(`http://localhost:8000/post-image/delete/${imageId}`, {
+                const res = await fetch(`https://animeclipsbr.onrender.com/post-image/delete/${imageId}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ export default function ProfilePost() {
         const token = localStorage.getItem('token');
         if (token) {
             try {
-                const res = await fetch(`http://localhost:8000/post-video/delete/${videoId}`, {
+                const res = await fetch(`https://animeclipsbr.onrender.com/post-video/delete/${videoId}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json',

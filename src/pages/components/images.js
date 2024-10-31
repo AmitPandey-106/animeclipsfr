@@ -14,7 +14,7 @@ export default function Images() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const res = await fetch('http://localhost:8000/all-post/image', {
+                const res = await fetch('https://animeclipsbr.onrender.com/all-post/image', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'

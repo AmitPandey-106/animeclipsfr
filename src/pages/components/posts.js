@@ -55,7 +55,7 @@ export default function Posts() {
         des: description,
       };
 
-      const res = await fetch('http://localhost:8000/post/image', {
+      const res = await fetch('https://animeclipsbr.onrender.com/post/image', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

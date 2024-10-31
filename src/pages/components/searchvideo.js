@@ -10,7 +10,7 @@ export default function SearchResults() {
 
   useEffect(() => {
     if (anime_type && mediaType) { // Ensure both anime_type and mediaType are defined
-      fetch(`http://localhost:8000/api/searchmedia?anime_type=${anime_type}&type=${mediaType}`)
+      fetch(`https://animeclipsbr.onrender.com/api/searchmedia?anime_type=${anime_type}&type=${mediaType}`)
         .then((res) => {
           if (!res.ok) {
             throw new Error('Network response was not ok');

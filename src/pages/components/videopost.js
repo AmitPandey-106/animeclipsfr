@@ -50,7 +50,7 @@ export default function Videopost() {
 
             const postData = { title, video: videoUrl, userId: userId, anime_type: animeTpye, des: description };
 
-            const res = await fetch('http://localhost:8000/post/video', {
+            const res = await fetch('https://animeclipsbr.onrender.com/post/video', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
