@@ -159,6 +159,11 @@ export default function Home() {
                                                 <Image
                                                     src={post.image}
                                                     alt={post.title}
+                                                    height={270}
+                                                    width={100}
+                                                    quality={100}
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
                                                     className={styles.post_image}
                                                 />
                                                 <div className={styles.anime_type}>{post.anime_type}</div>
@@ -194,6 +199,11 @@ export default function Home() {
                                             <Image
                                                 src={post.image}
                                                 alt={post.title}
+                                                height={270}
+                                                width={100}
+                                                quality={100}
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
                                                 className={styles.post_image}
                                             />
                                         </div>
