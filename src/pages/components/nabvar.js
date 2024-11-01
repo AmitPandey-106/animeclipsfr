@@ -61,6 +61,13 @@ export default function Navbar() {
     }
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Prevent default behavior of Enter key
+        handleSearch(); // Call the search function
+    }
+  };
+
   useEffect(() => {
     if (authuser) {
       // console.log(authuser.name)
@@ -127,6 +134,7 @@ export default function Navbar() {
             placeholder="Search..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyPress={handleKeyPress} 
           />
           <button onClick={handleSearch}>Search</button>
         </div>
