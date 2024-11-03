@@ -13,6 +13,8 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="google-adsense-account" content="ca-pub-6008813570665985" />
         <title>AnimeClips</title>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6008813570665985"
+        crossorigin="anonymous"></script>
       </Head>
       <AuthProvider>
         <Nabvar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
